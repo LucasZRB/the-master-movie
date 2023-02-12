@@ -1,0 +1,307 @@
+:root {
+    --font-color: #0061BB;
+    --intermedium-color: #0E85F2;
+    --last-color: #0074DF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    min-width: 320px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--font-color);
+}
+header .principal {
+    display: flex;
+}
+.header-hamburguesa {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/menu-bar-lines-option-list-hamburger-web-6-3228.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.header-title {
+    width: 60px;
+    height: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: var(--last-color);
+}
+.search-selected-movies {
+    display: flex;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: var(--last-color);
+}
+.search-selected-movies .search-text {
+    width: 230px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--last-color);
+}
+.search-logo {
+    width: 15px;
+    height: 15px;
+    margin: 7.5px;
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/search-2287049-1907871.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.38;
+    cursor: pointer;
+}
+
+main .background {
+    width: 100%;
+    height: 37vh;
+    background-image: url('https://observer.com/wp-content/uploads/sites/2/2021/05/summer-movies-2021-new-e1620919489437.jpg?resize=635,482');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .movies {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    background-color: var(--intermedium-color);
+}
+main .movies img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main .categories {
+    width: 100%;
+    height: auto;
+    background-color: var(--last-color);
+}
+.categories .categories-title {
+    padding: 10px;
+}
+main .categories span {
+    font-size: 2rem;
+}
+main .categories .categories-selection {
+    width: 100%;
+    height: auto;
+    padding: 0 0 8px 0;
+}
+main .categories .categories-selection ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+main .categories-selection li {
+    margin: 5px;
+    text-align: center;
+}
+main .categories-selection p {
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    padding: calc((25px - 10px)/2) 12px;
+    cursor: pointer;
+}
+
+main .front-page {
+    width: 100%;
+    height: 480px;
+    background-image: url('../src/Merlina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .selected-movie--description {
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+main .selected-movie--description .selected-movie--principal {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: end;
+}
+.selected-movie--description .selected-movie--principal .title {
+    font-size: 2rem;
+    width: 50vw;
+}
+.selected-movie--description .selected-movie--principal .title span {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.selected-movie--description .selected-movie--principal .punctuation {
+    font-size: 1rem;
+}
+.selected-movie--description .selected-movie--resume {
+    padding: 0 10px;
+}
+.selected-movie--description .creators {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+
+main .distribution {
+    width: 100%;
+    height: 300px;
+    background-color: var(--intermedium-color);
+}
+.distribution .distribution-title {
+    padding: 10px;
+}
+.distribution .distribution-title span {
+    font-size: 2rem;
+}
+.distribution .distribution-persons {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.distribution .distribution-persons .distribution-persons--card {
+    width: 122px;
+    height: 250px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+.distribution .distribution-persons img {
+    width: 120px;
+    height: 133px;
+    border-radius: 5px 5px 0 0;
+}
+.distribution-persons--card .distribution-persons--name {
+    font-weight: bold;
+    padding: 8px 10px 0px;
+}
+.distribution-persons--card .distribution-persons--character,
+.distribution-persons--episodes {
+    padding: 0 10px;
+}
+
+.selected-movie .recommendations {
+    width: 100%;
+    height: 280px;
+    background-color: var(--last-color);
+}
+.selected-movie .recommendations .recommendations-title {
+    padding: 10px;
+}
+.recommendations .recommendations-title span {
+    font-size: 2rem;
+}
+.selected-movie .recommendations .recommendations-movies {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.selected-movie .recommendations img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+main .search-movies {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--intermedium-color);
+}
+main .search-movies--tag {
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: orange;
+}
+main .search-movies--list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main .search-movies--list img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+main .search-movies--more {
+    width: 70px;
+    height: 25px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--font-color);
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color);
+}
+footer .footer__redes {
+    display: flex;
+    list-style: none;
+}
+footer .footer__redes li {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--last-color);
+}
+
+.hide {
+    display: none;
+}

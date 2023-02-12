@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Master Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+    <header>
+        <div class="principal">
+            <div class="header-hamburguesa"></div>
+            <p class="header-title">The Master Movie</p>
+        </div>
+        <div class="search">
+            <div class="search-logo"></div>
+        </div>
+        <div class="search-selected-movies hide">
+            <input type="search" class="search-text" id="search-text">
+            <div class="search-logo"></div>
+        </div>
+    </header>
+    <main>
+        <section class="principal-page">
+            <div class="background"></div>
+            <div class="movies">
+                <!-- <img src="./src/Merlina.jpg" alt="Miercoles"> -->
+            </div>
+            <div class="categories">
+                <div class="categories-title">
+                    <span>Categorías</span>
+                </div>
+                <div class="categories-selection">
+                    <ul>
+                        <!-- <li>
+                            <p>Acción</p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="selected-movie hide">
+            <div class="front-page"></div>
+            <div class="selected-movie--description">
+                <div class="selected-movie--principal">
+                    <p class="title">Miércoles <span>(2022)</span></p>
+                    <p class="punctuation">8.7⭐</p>
+                </div>
+                <div class="selected-movie--resume">
+                    <p>Miércoles Addams, lista, sarcástica y un poco muerta por dentro, investiga una oleada de asesinatos mientras hace amigos —y enemigos— en la Academia Nunca Más.</p>
+                </div>
+                <ul class="creators">
+                    <li>
+                        <p class="creator-name">Miles Millar</p>
+                        <p class="creator-type">Creador</p>
+                    </li>
+                    <li>
+                        <p class="creator-name">Alfred Gough</p>
+                        <p class="creator-type">Creador</p>
+                    </li>
+                </ul>
+            </div>
+            <section class="categories">
+                <div class="categories-title">
+                    <span>Categorías</span>
+                </div>
+                <div class="categories-selection">
+                    <ul>
+                        <li>
+                            <p>Sci-Fi & Fantasy</p>
+                        </li>
+                        <li>
+                            <p>Misterio</p>
+                        </li>
+                        <li>
+                            <p>Comedia</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="distribution">
+                <div class="distribution-title">
+                    <span>Reparto</span>
+                </div>
+                <div class="distribution-persons">
+                    <section class="distribution-persons--card">
+                        <img src="./src/Casa de Papel.jpg" alt="La casa de papel Corea">
+                        <p class="distribution-persons--name">a</p>
+                        <p class="distribution-persons--character">a</p>
+                        <p class="distribution-persons--episodes">a</p>
+                    </section>
+                    <section class="distribution-persons--card">
+                        <img src="./src/Merlina.jpg" alt="Miercoles">
+                        <p class="distribution-persons--name"></p>
+                        <p class="distribution-persons--character"></p>
+                        <p class="distribution-persons--episodes"></p>
+                    </section>
+                    <section class="distribution-persons--card">
+                        <img src="./src/Merlina.jpg" alt="Miercoles">
+                        <p class="distribution-persons--name"></p>
+                        <p class="distribution-persons--character"></p>
+                        <p class="distribution-persons--episodes"></p>
+                    </section>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="recommendations-title">
+                    <span>Recomendaciones</span>
+                </div>
+                <div class="recommendations-movies">
+                    <img src="./src/Casa de Papel.jpg" alt="La casa de papel Corea">
+                    <img src="./src/Merlina.jpg" alt="Miercoles">
+                </div>
+            </div>
+        </section>
+
+        <section class="search-movies">
+            <div class="search-movies--tag hide">Comedia</div>
+            <div class="search-movies--list">
+                <img src="./src/Casa de Papel.jpg" alt="La casa de papel Corea">
+                <img src="./src/Merlina.jpg" alt="Miercoles">
+                <img src="./src/Casa de Papel.jpg" alt="La casa de papel Corea">
+                <img src="./src/Merlina.jpg" alt="Miercoles">
+            </div>
+            <button class="search-movies--more">Ver Más</button>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer__redes">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="15">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968898.png" alt="Discord" width="15">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561188.png" alt="Email" width="15">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/secrets.js"></script>
+    <script src="./src/nodes.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
+</body>
+</html>
